@@ -31,7 +31,7 @@ detector.on('face', (faces, image) => {
 detector.on('smile', (smiles, face, image) => {
   console.log(smiles);
   smiles.forEach((smile) => {
-    image.rectangle([smile.x + face.x, smile.y + face.y/2 + face.y], [smile.width, smile.height], SmileFaceDetector.blue, 2);
+    image.rectangle([smile.x + face.x, smile.y + face.height/2 + face.y], [smile.width, smile.height], SmileFaceDetector.blue, 2);
   });
   image.save('./images/Lenna_result.jpg');
 });
