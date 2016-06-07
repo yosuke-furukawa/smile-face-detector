@@ -48,13 +48,39 @@ detector.load('./images/Lenna.png').then((image) => {
 
 ```js
 new SmileFaceDetector({
-  // Parameter specifying how much the image size is reduced at each image scale on face detection
+  // Parameter specifying how much the image size is reduced at each image scale on face detection default: 1.05
   faceScale: 1.01,
-  // Parameter specifying how many neighbors each candidate rectangle should have to retain it on face detection
+  // Parameter specifying how many neighbors each candidate rectangle should have to retain it on face detection default: 8
   faceNeighbor: 2,
-  // Parameter specifying how much the image size is reduced at each image scale on smile detection
+  // Parameter specifying how much the image size is reduced at each image scale on smile detection default: 1.7
   smileScale: 1.01,
-  // Parameter specifying how many neighbors each candidate rectangle should have to retain it on smile detection
+  // Parameter specifying how many neighbors each candidate rectangle should have to retain it on smile detection default: 22
   smileNeighbor: 2,
 });
+```
+
+## load
+
+```js
+const detector = new SmileFaceDetector();
+detector.load('/foo/bar.jpg').then((image) => {
+  // image is Matrix instance on opencv
+}).catch((e) => {
+  // load image failure
+});
+```
+
+## detect
+
+```js
+const detector = new SmileFaceDetector();
+detector.on('face', (faces, image) => {
+  // faces is an array of face area like face.x, face.y, face.width, face.height
+});
+detector.on('smile', (smiles, face, image) => {
+  // smiles is an array of smile area like smile.x, smile.y, smile.width, smile.height
+});
+detector.load('/foo/bar.jpg').then((image) => {
+  detector.detect(image);
+})
 ```
