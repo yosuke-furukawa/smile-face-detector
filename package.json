@@ -1,0 +1,32 @@
+{
+  "name": "smile-face-detector",
+  "version": "1.0.0",
+  "description": "smile face detector",
+  "main": "index.js",
+  "scripts": {
+    "test": "eater"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yosuke-furukawa/smile-face-detector.git"
+  },
+  "keywords": [
+    "smile",
+    "face",
+    "detect",
+    "opencv",
+    "recognition"
+  ],
+  "author": "yosuke-furukawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yosuke-furukawa/smile-face-detector/issues"
+  },
+  "homepage": "https://github.com/yosuke-furukawa/smile-face-detector#readme",
+  "dependencies": {
+    "opencv": "^5.0.0"
+  },
+  "devDependencies": {
+    "eater": "^1.7.0"
+  }
+}
