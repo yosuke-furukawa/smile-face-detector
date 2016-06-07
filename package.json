@@ -1,6 +1,6 @@
 {
   "name": "smile-face-detector",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "smile face detector",
   "main": "index.js",
   "scripts": {
