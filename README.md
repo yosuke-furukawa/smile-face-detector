@@ -16,7 +16,7 @@ $ npm install smile-face-detector --save
 # example code
 
 ```js
-const SmileFaceDetector = require('../.');
+const SmileFaceDetector = require('smile-face-detector');
 const detector = new SmileFaceDetector({smileScale: 1.01, smileNeighbor: 10});
 detector.on('error', (error) => {
   console.error(error);
