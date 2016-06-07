@@ -3,9 +3,9 @@ smile-face-detector
 
 smile-face-detector detects smiles in your image. 
 
-![lenna](./images/Lenna_result.jpg)
-![child](./images/child_result.jpg)
-![child2](./images/child2_result.jpg)
+![lenna](https://raw.githubusercontent.com/yosuke-furukawa/smile-face-detector/master/images/Lenna_result.jpg)
+![child](https://raw.githubusercontent.com/yosuke-furukawa/smile-face-detector/master/images/child_result.jpg)
+![child2](https://raw.githubusercontent.com/yosuke-furukawa/smile-face-detector/master/images/child2_result.jpg)
 
 # How to install 
 
