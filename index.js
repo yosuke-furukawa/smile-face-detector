@@ -1,13 +1,14 @@
 'use strict';
 const opencv = require('opencv');
 const EventEmitter = require('events');
+const path = require('path');
 
 const greenColor = [0, 255, 0];
 const blueColor = [255, 0, 0];
 const redColor = [0, 0, 255];
 const rectThickness = 2;
 const faceClassifier = new opencv.CascadeClassifier(opencv.FACE_CASCADE);
-const smileClassifier = new opencv.CascadeClassifier('./data/haarcascade_smile.xml');
+const smileClassifier = new opencv.CascadeClassifier(path.join(__dirname, './data/haarcascade_smile.xml'));
 const defaultFaceScale = 1.05;
 const defaultFaceNeighbor = 8;
 const defaultSmileScale = 1.7;
